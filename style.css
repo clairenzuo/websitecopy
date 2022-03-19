@@ -376,6 +376,53 @@ font-weight: bold;
     } 
   } */
 
+
+  .parallaxscroll section { /*needed for SURE to get the cool scroll layer effect*/ /*HOW DO I MAKE THE OPEN SCROLL BOX BIGGER UGH*/
+    background-attachment: fixed;
+    /* background-size: 100% auto; */
+    display: flex;
+    height: 100vh;
+  }
+
+
+  .parallaxscroll section h1 {
+    margin: auto;
+    color: black;
+    font-size: 3em;
+    text-align: right;
+    padding-left: 0%;
+    font-weight: 400;
+  }
+
+
+  .parallaxscroll section h1 .ibudget{       
+     margin: auto;
+    color: black;
+    /* font-size: 2em; */
+    text-align: right;
+    padding-left: 0%;
+    font-weight: 400;
+    text-decoration: none;
+    background-color: rgba(200, 196, 244, 0.54);
+  }
+
+
+
+  .parallaxscroll section h1 .integrate{       
+    margin: auto;
+   color: black;
+   /* font-size: 2em; */
+   text-align: right;
+   padding-left: 0%;
+   font-weight: 400;
+   text-decoration: none;
+   background-color: rgba(248, 161, 137, 0.54)
+   ;
+
+ }
+
+
+
 /*ARTWORK PAGE **************************************************************************************************************/
 
 
@@ -431,6 +478,7 @@ font-weight: bold;
         .main-text h2{ 
             font-size: 3.5em;
             color: black;
+            padding-left:14%;
         }    
     
         .ityped {
@@ -439,6 +487,10 @@ font-weight: bold;
 
         ul li {
             padding-left: 8%;
+        }
+
+        .moreinfo p{
+            padding-left: 15%;
         }
     /* Home sceen scroll adjusting size */
     
@@ -517,19 +569,91 @@ font-weight: bold;
         background-attachment: fixed;
         /* background-size: 100% auto; */
         display: flex;
+        height: 100vh;
       }
 
     .bodyandimage {
         padding-left: 11%;
         padding-right:10%;
+    }
+
+    .bodyandimage p{
+        padding-left: 5%;
+        padding-right:0%;
+    }
+
+    .image-gallery img{
+        padding-left:10%;
+        padding-right:10%;
+        padding-bottom:3%;
 
     }
 
+    .banner {
+        padding-left:10%;
+        padding-right:10%;
+        padding-bottom:3%;
+    }
+
+
+    .typo {
+        padding-left:10%;
+        padding-right:10%;
+        padding-bottom:3%;
+    }
+
+
+    .parallaxscroll section h1 {
+        margin: auto;
+        color: black;
+        font-size: 4.5em;
+        text-align: right;
+        padding-left: 0%;
+        font-weight: 400;
+      }
+
+
+      .parallaxscroll section h1 .ibudget{       
+         margin: auto;
+        color: black;
+        /* font-size: 2em; */
+        text-align: right;
+        padding-left: 0%;
+        font-weight: 400;
+        text-decoration: none;
+        background-color: rgba(200, 196, 244, 0.54);
+      }
+
+
+
+      .parallaxscroll section h1 .integrate{       
+        margin: auto;
+       color: black;
+       /* font-size: 2em; */
+       text-align: right;
+       padding-left: 0%;
+       font-weight: 400;
+       text-decoration: none;
+       background-color: rgba(248, 161, 137, 0.54)
+       ;
+
+     }
+
+
+
+
+      
 /* DIGITALARTSCREEN***************************************************************************************************************************************************************************/
 
 
 @media screen and (min-width: 1025px){ /*widescreenview  widescreenview  widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview  */
        
+    .image-gallery img{
+        padding-left:0%;
+        padding-right:0%;
+        padding-bottom:0%;
+
+    }
     .main-text .designpageparagraph {
         font-size: 3em;
         font-weight: 400;
@@ -749,6 +873,7 @@ padding-right: 5%;}
 
 
 
+
 /* DIGITAL ART PAGE PARALLAX IMAGES **************************************************************/
 
 .parallaxscroll section { 
@@ -761,8 +886,9 @@ padding-right: 5%;}
     font-size: 4.5em;
     text-align: right;
     padding-left: 40%;
-    font-weight: bold;
+    font-weight: 400;
   }
+  
   
   .parallaxscroll section h1 :hover {
       text-decoration: underline;
@@ -780,7 +906,7 @@ padding-right: 5%;}
     ;
   }
   .parallaxscroll section:last-of-type {
-    background-color:#eca58f
+    background-color: #f8a189
     ;  }
 
 
