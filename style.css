@@ -21,6 +21,7 @@ body{
 	position: absolute;
 }
 
+
 .label { /*aka lightbulb size*/
     font-size: 1em; 
 }
@@ -205,25 +206,19 @@ ul li { /*adjusts the spacing of the container holding the nav elements so it's 
 
 /*HOME PAGE */
 
-.main-text h1{ /*main text in the middle of the page */
+.main-text { /*THIS is all of the main text, header and paragaph*/
+    padding-right: 3%;
+}
+
+.main-text h1{ /*main BIG text in the middle of the page just the header*/
     font-size: 5em;
     padding-left: 11%;
-    padding-top: 37%;
+    padding-top: 50%;
     color: black;
     font-weight: 600;
 }
 
-.ityped {
-    font-size: 1.1em;
-    padding-left: 11%;
-    font-weight:400;
-    color: black;
-}
-
-.main-text {
-    padding-right: 10%;
-}
-.main-text p{
+.main-text p{ /*just the paragraph*/
     color: black;
     font-size: 1.1em;
     text-align: left;
@@ -232,10 +227,13 @@ ul li { /*adjusts the spacing of the container holding the nav elements so it's 
 }
 
 
-.main-text h2{ /*fingerpointing alignment*/
-    font-size: 2.2em;
-    text-align: left;
+.ityped { /*typing animation*/
+    font-size: 1.1em;
+    padding-left: 11%;
+    font-weight:400;
+    color: black;
 }
+
 
 footer.style {
     text-align: left;
@@ -263,145 +261,58 @@ footer.style {
     padding-bottom: 10%;
     padding-top:8%;
 }
-/* footer p{
-    background-color: white;
-    color: black;
-    padding-bottom: 10%;
-} */
 
-section {
-    height: 100vh;
+
+section { /*sizing of the annoying parallax thing!*/
+    height: 70vh;
     display: flex;
 }
 
-.wontainer{
-    /* scroll-snap-type: y mandatory; */
+.parallaxscroll section {
+  /* background-size: 10vw; */
+  /* width: 100vw; */
+  background-size: cover;
+}
+
+
+/* .parallaxscroll section h1 {
+  color: transparent;} */
+
+.parallaxscroll section:first-of-type {
+background-image: url(artwork1.jpg);
+}
+.parallaxscroll section:nth-of-type(2) {
+background-image: url(splashpagehome.png);
+}
+.parallaxscroll section:last-of-type {
+background-image: url(pic6.png);
+}
+
+/* .moreinfo h2{
+    padding-left: 5%;} */
+
+/* .wontainer{ */
+    /* scroll-snap-type: y mandatory; */ */
     /* overflow-y: scroll; */
-    padding-top: 20%;
-}
+    /* padding-top: 20%;
+}*/
 
-/* .one {
-    background: white;
-    background: rgb(255,228,240);
-    background: linear-gradient(99deg, rgba(255,228,240,1) 30%, rgba(201,148,233,1) 95%);
-}
-
-.two {
-    background: rgb(128,228,61);
-    background: linear-gradient(222deg, rgba(128,228,61,1) 24%, rgba(230,241,157,1) 58%, rgba(255,242,174,1) 72%);
-} */
-
-/*change this for each screen size*/
-/* .one img{
-    width: 100vh;
-    padding-left: 3%;
-    padding-top: 30%;
-    padding-right: 5%;
-}
-.two img{
-   width: 85vw;
-   padding-top: 5%;
-   padding-left: 14%;
-}
-
-.scrolltext p{
-    font-size: 1em;
-    padding-left: 10%;
-    width: 90%;
-    padding-top: 15%;
-    padding-bottom: 10%;
-}
-
-.scrolltext2 p{
-    font-size: 1em;
-    padding-left: 10%;
-    width: 90%;
-    padding-top: 25%;
-}
-
-.title-text {
-    font-size: 1.5em;
-    font-weight: bold;
-} */
-
-/* red PROGRESS BAR */
-.progress-container {
-    width: 100%;
-    height: 3.5px;
-    background:white;
-    position: fixed;
-    top: 0%;
-  }
-  
-  .progress-bar {
-    height: 3.5px;
-    background: #1E90FF;
-    width: 0%;
-  }
-
-
-/* DESIGN PAGE *************************************************************************************/
-
-.container .image-gallery { 
-    padding-top: 9%;
-    padding-right: 5%;
-    width: 2000px;
-    padding: 5%;
-}
-
-.image-gallery p{
-    padding-top: 5%;
-    padding-bottom: 20%;
-    padding-right: 5%;
-    color: white;
-    padding-left: 5%;
-} 
-
-.image-gallery img{
-    padding-right: 5%;
-    padding-left: 0%;
-} 
-
- .image-gallery .special-text {  /*making the titles of the song names bigger w/o messing up the formatting */
-    font-size: 2em;
-    font-weight: bold;
-    line-height: normal;
-}
 
 /* ABOUT PAGE **************************************************************************************/
+.main-text h2{ /*That one line of text on the about you page*/
+    font-size: 2.2em;
+    text-align: left;
+    color: black;
+} 
+/*EDIT: IMAGE IS not aligned because of the right padding for main text, but I can't remove it or else the waving hand on page one will not
+move onto a new line, so if you want to remove it for the about page, you have to make a new class*/
 
-/* .about-me img {
-    padding-right: 5%;
-    padding-left: 5%;
-    padding-top: 20%;
-}
-.about-me p{
-    color: white;
-    padding-left: 7%;
-    padding-right: 7%;
-    padding-top: 10%;
-    padding-bottom: 13%;
-} */
-
-
-
-.bodyandimage img {
-max-height: 70%;
-padding-left: 5%;
-padding-bottom: 0%;
-padding-right: 5%;
-}
-
-
-.main-text p{ 
+.main-text p{  /*how close the paragraph text is to the big font and spacing between that text and ur image*/
 padding-top: 2%;
-
-/* width: 60%; */
 padding-bottom: 15%;
 }
 
-
-.main-text p .civixtext{  
+.main-text p .civixtext{  /*special color text of companies*/
 color: #dc143c;
 font-weight: bold;
 }
@@ -416,9 +327,17 @@ color: #4169e1;
 font-weight: bold;
 }
 
-/*CONTACT PAGE**************************************************************************************************************************/
+.bodyandimage img { /*MY PICTURE!!*/
+    max-height: 70%;
+    padding-left: 5%;
+    padding-bottom: 0%;
+    padding-right: 2%;
+    }
+    
 
-input[type=text] {
+/*CONTACT PAGE**************************************************************************************************************************/
+/*i think THIS IS SAFE TO DELETE??? WITHOUT RUINING THE HOME PAGE SNAP SCROLL??*/
+/* input[type=text] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -455,47 +374,16 @@ input[type=text] {
     font-size: 1.5em;
     padding-top: 25%;
     } 
-  }
+  } */
 
 /*ARTWORK PAGE **************************************************************************************************************/
-  
-  section {
-    height: 60vh;
-}
-
-.parallaxscroll section {
-  background-size: 10vw; /* cut this*/
-  width: 100%;
-  background-size: cover;
-}
-
-.parallaxscroll section h1 {
-  color: transparent;}
-
-.parallaxscroll section:first-of-type {
-background-image: url(artwork1.jpg);
-}
-.parallaxscroll section:nth-of-type(2) {
-background-image: url(splashpagehome.png);
-}
-.parallaxscroll section:last-of-type {
-background-image: url(pic6.png);
-}
-
-.moreinfo h2{
-    padding-left: 5%;}
-
 
 
 @media screen and (min-width: 750px){ /*tablet tablet viewtablet viewtablet viewtablet viewtablet viewtablet viewtablet viewtablet view*/
 
     #title{
         font-size:  2em;
-
-        /* padding-left: 8%;
-        padding-top: 5%;
-        padding-bottom: 3%;
-        font-weight: bold; */
+        padding-right:50%;
     }
 
     .label {
@@ -506,24 +394,20 @@ background-image: url(pic6.png);
             font-size: 4.25em;
         } */
         
-        .navbar ul{
+        /* .navbar ul{
         flex-direction: column;
         align-content: flex-end;
         align-items: flex-end;
         padding-right: 5%;
         padding-top: 10%;
-        }
+        } */
 
     
         .navbar a{
             font-size: 2em;
         }
       
-        /* MAKING MAIN PAGE TEXT BIGGER */
 
-        /* .main-text {
-            margin-top: -20%;
-        } */
         .main-text h1{
             font-size: 5em;
             padding-top: 23%;
@@ -532,15 +416,17 @@ background-image: url(pic6.png);
         .main-text p{
             font-size: 1.75em;
             padding-bottom: 0%;
+            color:
         }
     
         .main-text h2{ 
             font-size: 3.5em;
+            color: black;
         }    
     
     /* Home sceen scroll adjusting size */
     
-    .one img{
+    /* .one img{
         width: 70vh;
         padding-left: 5%;
         padding-top: 10%;
@@ -550,9 +436,9 @@ background-image: url(pic6.png);
        padding-left:27%;
        width: 75%;
        padding-bottom: 10%;
-    }
+    } */
     
-    .scrolltext p{
+    /* .scrolltext p{
         font-size: 1.35em;
         padding-left: 15%;
         padding-top: 0%;
@@ -561,10 +447,10 @@ background-image: url(pic6.png);
     .scrolltext2 p{
         font-size: 1.35em;
         padding-top: 10%;
-    }
+    } */
     
     /*UI/UX PAGE**************************************************************************************/
-        .image-galleryone {
+        /* .image-galleryone {
             grid-template-columns: auto auto;
             grid-template-rows: auto auto;
             justify-content: center;
@@ -576,35 +462,23 @@ background-image: url(pic6.png);
             grid-template-columns: auto auto ;
             grid-template-rows: auto auto auto;
             justify-content: center;
-            padding-bottom: 5%; /*changing from 10 from the mobile to 5% */
+            padding-bottom: 5%; 
         }
-    
-    
-        .body-text { /*project descriptions*/
+     */
+/*     
+        .body-text { 
         font-size: 1.8em;
         width: 95%;
         padding-left: 7%;
-        }
+        } */
     
     /* DESIGN PAGE ***************************************************************************************/
     
-     .image-gallery {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            padding-bottom: 5%; /*changing from 25 from the mobile to 5% */
-            padding-right: 3%;
-            padding-left: 7%;
-            padding-top:15%;
-        } 
-    
-        .image-gallery p{
-            padding-left: 10%;
-            font-size: 1.5em;
-        } 
+
       
     /*ABOUT ME PAGE **************************************************************************************************************************************************************************/
     
-    
+/*     
     .about-me {
         display: flex;
         justify-content: center;
@@ -621,19 +495,40 @@ background-image: url(pic6.png);
     .about-me img{
         width: 100%;
         padding-top: 0%;
-    }
+    } */
 
+    .parallaxscroll section { /*needed for SURE to get the cool scroll layer effect*/ /*HOW DO I MAKE THE OPEN SCROLL BOX BIGGER UGH*/
+        background-attachment: fixed;
+        /* background-size: 100% auto; */
+        display: flex;
+      }
 
 /* DIGITALARTSCREEN***************************************************************************************************************************************************************************/
-    
-    .parallaxscroll section {
-      background-attachment: fixed;
-      background-size: 100% auto;
-      display: flex;
-    }
-    
+
 
 @media screen and (min-width: 1025px){ /*widescreenview  widescreenview  widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview  */
+       
+    .parallaxscroll section { /*needed for SURE to get the cool scroll layer effect*/
+        background-attachment: fixed;
+        background-size: 100% auto;
+        display: flex;
+      }
+    
+      
+    .image-gallery { /*something about this keeps the design page elements the right size on desktop lol */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 5%; /*changing from 25 from the mobile to 5% */
+        padding-right: 3%;
+        padding-left: 7%;
+        padding-top:15%;
+    } 
+
+    .image-gallery p{
+        padding-left: 10%;
+        font-size: 1.5em;
+    } 
+    
     .main-text h1{ /*main text in the middle of the page */
         font-size: 3em;
         padding-left: 8%;
@@ -990,6 +885,7 @@ header {
 
 .main-text h2{
     font-size: 3em;
+    color: black;
 }
 
 .main-text p{
@@ -1058,6 +954,12 @@ ul li {
     padding-left: 10%;
     padding-right: 8%;
 
+}
+
+
+section {
+    height: 100vh;
+    display: flex;
 }
 
 
