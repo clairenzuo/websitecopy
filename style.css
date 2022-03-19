@@ -384,11 +384,13 @@ font-weight: bold;
     #title{
         font-size:  2em;
         padding-right:50%;
+        padding-left: 8%;
     }
 
     .label {
-        font-size: 5em; 
+        font-size: 2em; 
     }
+    
     
     /* .logo {
             font-size: 4.25em;
@@ -404,19 +406,26 @@ font-weight: bold;
 
     
         .navbar a{
-            font-size: 2em;
+            font-size: 1.5em;
         }
       
 
         .main-text h1{
-            font-size: 5em;
-            padding-top: 23%;
+            font-size: 7em;
+            padding-top: 50%;
         }
     
+        .main-text .designpageparagraph {
+            font-size: 3em;
+            font-weight: 400;
+            padding-left:12%;
+        }
         .main-text p{
             font-size: 1.75em;
-            padding-bottom: 0%;
-            color:
+            padding-bottom: 15%;
+            padding-left:12%;
+            padding-right: 5%;
+        
         }
     
         .main-text h2{ 
@@ -424,6 +433,13 @@ font-weight: bold;
             color: black;
         }    
     
+        .ityped {
+            font-size:4em;
+        }
+
+        ul li {
+            padding-left: 8%;
+        }
     /* Home sceen scroll adjusting size */
     
     /* .one img{
@@ -503,12 +519,23 @@ font-weight: bold;
         display: flex;
       }
 
+    .bodyandimage {
+        padding-left: 11%;
+        padding-right:10%;
+
+    }
+
 /* DIGITALARTSCREEN***************************************************************************************************************************************************************************/
 
 
 @media screen and (min-width: 1025px){ /*widescreenview  widescreenview  widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview  */
        
-    .parallaxscroll section { /*needed for SURE to get the cool scroll layer effect*/
+    .main-text .designpageparagraph {
+        font-size: 3em;
+        font-weight: 400;
+        padding-left:0%;
+    }
+     .parallaxscroll section { /*needed for SURE to get the cool scroll layer effect*/
         background-attachment: fixed;
         background-size: 100% auto;
         display: flex;
@@ -543,6 +570,7 @@ font-weight: bold;
         text-align: left;
         padding-left: 5%;
         padding-right: 5%;
+        padding-botom:0%;
     }
   
     .label {
@@ -762,7 +790,7 @@ padding-right: 5%;}
         display: grid;
         grid-template-columns: 1fr 1fr;
         /* padding-left: 2%; */
-        padding-top: 14%;
+        padding-top: 0%;
 }
 
 .bodyandimage img {
