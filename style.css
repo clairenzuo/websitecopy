@@ -4,132 +4,91 @@
     margin: 0;
     background-size: 100% 100%;
 }
-
-
+/*mobile view*/
 
 @import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
 
+/*consistent design- design attributes on every single page*/
 
 body{
     font-family: "Inter", sans-serif;
     line-height: 1.6;
 }
+/*javascript features*/
 
-#title{
-    font-size:  2em;
-    /* padding-left: 15%; */
-    padding-right: 30%;
-    padding-top: 10%;
-    padding-bottom: 3%;
-    font-weight: 400;
-    color: black;
-}
-
-.ityped {
-    color: black;
-    font-size: 2em;
-    font-weight:800; 
-}
-
-.arrow {
-    box-sizing: border-box;
-    height: 5vw;
-    width: 5vw;
-    border-style: solid;
-    border-color: gray;
-    border-width: 0px 3px 3px 0px;
-    transform: rotate(45deg);
-    transition: border-width 150ms ease-in-out;
-  }
-  
-  .arrow:hover {
-    border-bottom-width: 4px;
-    border-right-width: 4px;
-  }
-  
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background-color: #0e242d; */
-    /* height: 100vh; */
-    padding-bottom: 15%;
-    padding-top:30%;
-  }
-/*DARK/LIGHT MODE*/
-
-.checkbox {
+.checkbox { /*Progress bar*/
 	opacity: 0;
 	position: absolute;
 }
 
-.label {
+.label { /*aka lightbulb size*/
     font-size: 1em; 
-    /* position: relative;
-    left: 85%;
-    padding-top: 1%; */
 }
 
+/* waving hand animation*/
+
+.wave {
+    animation-name: wavinghand; 
+    animation-duration: 2.5s;       /*speed of wave*/
+    animation-iteration-count: infinite; 
+    display: inline-block; 
+    transform-origin: 80% 100%;       /*pivot point of wave*/
+  }
+  
+  @keyframes wavinghand {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+/*DARK/LIGHT MODE*/
+
 /* LIGHT MODE -  */
-  body.light {
+body.light {
     background-color: white; 
     color:white; 
   }
-/*navbar*/
 
-  body.light a {
+  body.light a { /*navbar is grey on light mode instead of black which is default*/
     color:grey;
   }
 
-  body.light #title a{ /*targets my name */
+  body.light #title a{ /*targets my name "logo" specifically so it doesn't change grey w the nav*/
       color: black;
   }
 
-  body.light .navbar .logo a{
-    color: black;
-  }
+  /* DARK MODE */
 
-  /* DARK MODE (WHITE BG) */
-
-  body.dark #title a{ /*targets my name */
-    color: white;
-}
-
-body.dark .ityped{ /*targets my name */
-    color: white;
-}
-
-  body.dark {
+  body.dark { /*so that the background is all black, and default text color is white*/
     background-color: black; 
     color:white;
   }
-  body.dark a {
-    color:grey;
-  }
-  
-
-  body.dark .logo {
-    color:white;
-  }
-
-  body.dark h1 {
-    color:white;
-  }
 
 
-  body.dark .main-text p{
-    color:grey;
-  }
-
-  body.dark .image-gallery p{
-      color: white;
-  }
-
-  body.dark .about-me p{
+  body.dark #title a{ /*targets my name "logo" specifically so it doesn't change grey w the nav*/
     color: white;
 }
 
-body.dark .main-text.moreinfo h2{
+body.dark .ityped{ /*changes the typing font to white*/
+    color: white;
+}
+
+  body.dark h1 {  /*turns Hello! I'm claire white, on dark mode*/
+    color:white;
+  }
+
+
+  body.dark .main-text p{ /*main-text p is the text under DESIGNS on the design page*/
+    color:grey; 
+  }
+
+
+body.dark .main-text.moreinfo h2{ /*the second secton of about me for fun stuff*/
     color: white;
 }
 
@@ -168,45 +127,43 @@ footer.dark  {
     background-color: black;
 }   
 
-/* waving hand animation*/
 
-.wave {
-    animation-name: wavinghand; 
-    animation-duration: 2.5s;       /*speed of wave*/
-    animation-iteration-count: infinite; 
-    display: inline-block; 
-    transform-origin: 70% 70%;       /*pivot point of wave*/
-  }
-  
-  @keyframes wavinghand {
-    0% { transform: rotate( 0.0deg) }
-   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
-   20% { transform: rotate(-8.0deg) }
-   30% { transform: rotate(14.0deg) }
-   40% { transform: rotate(-4.0deg) }
-   50% { transform: rotate(10.0deg) }
-   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
-  100% { transform: rotate( 0.0deg) }
-}
 ul {
     list-style-type: none;
 }
 
-.skip a{
-    left: 50%;
-    position: absolute;
-    transform: translateY(-100%);
-  }
-
-h1, h2 {    /* spacing for main header texts */
-    font-weight: 300px;
-    line-height: 1.2;
-    margin: 10px 0; 
-    color: black;
+#title{ /*title is the "logo" aka my name*/
+    font-size:  2em;
+    padding-right: 30%;
+    padding-top: 10%;
+    padding-bottom: 3%;
+    font-weight: 400;
 }
 
-ul li {
-    /* padding: 5px; */
+.container { /*container that holds the down arrow*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15%;
+    padding-top:30%;
+  }
+
+.arrow {
+    box-sizing: border-box;
+    height: 5vw;
+    width: 5vw;
+    border-style: solid;
+    border-color: gray;
+    border-width: 0px 3px 3px 0px;
+    transform: rotate(45deg);
+    transition: border-width 150ms ease-in-out;
+  }
+
+  h1, h2 {    /* spacing for main header texts */
+    line-height: 1.1;
+}
+
+ul li { /*adjusts the spacing of the container holding the nav elements so it's on a seperate line from the logo title*/
     font-size: 1em;
     padding-left: 5%;
 }
@@ -233,28 +190,25 @@ ul li {
     padding-top: 0%;
 }
 
-.navbar .container-flex #active{ 
+.navbar .container-flex #active{ /*active navbar*/
     text-decoration: underline 2px;
     text-underline-offset: 8px;
     color:black;
 }  
 
-.navbar .container-flex ul :hover{ 
+.navbar .container-flex ul :hover{  /*hover navbar*/
     text-decoration: underline 2px;
     text-underline-offset: 8px;
     color: black;
 
 }  
 
-/* .navbar .container-flex ul #title :hover{
-
-    text-decoration: none;
-} */
+/*HOME PAGE */
 
 .main-text h1{ /*main text in the middle of the page */
-    font-size: 2em;
+    font-size: 5em;
     padding-left: 11%;
-    padding-top: 55%;
+    padding-top: 37%;
     color: black;
     font-weight: 600;
 }
@@ -263,6 +217,7 @@ ul li {
     font-size: 1.1em;
     padding-left: 11%;
     font-weight:400;
+    color: black;
 }
 
 .main-text {
