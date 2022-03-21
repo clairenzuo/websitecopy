@@ -262,6 +262,16 @@ footer.style {
     padding-top:8%;
 }
 
+.footerlinks p{
+    color: grey;
+    padding-left: 8%;
+    font-size:1.25em;
+    padding-bottom: 5%;
+    margin-left: auto; 
+}
+
+
+
 
 section { /*sizing of the annoying parallax thing!*/
     height: 70vh;
@@ -426,7 +436,12 @@ font-weight: bold;
 /*ARTWORK PAGE **************************************************************************************************************/
 
 
-@media screen and (min-width: 750px){ /*tablet tablet viewtablet viewtablet viewtablet viewtablet viewtablet viewtablet viewtablet view*/
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+/*tablet tablet viewtablet viewtablet viewtablet viewtablet viewtablet viewtablet viewtablet view*/
 
     #title{
         font-size:  2em;
