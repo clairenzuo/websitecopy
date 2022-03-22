@@ -436,12 +436,7 @@ font-weight: bold;
 /*ARTWORK PAGE **************************************************************************************************************/
 
 
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-/*tablet tablet viewtablet viewtablet viewtablet viewtablet viewtablet viewtablet viewtablet view*/
+@media screen and (min-width: 750px){ /*tablet tablet viewtablet viewtablet viewtablet viewtablet viewtablet viewtablet viewtablet view*/
 
     #title{
         font-size:  2em;
@@ -1131,7 +1126,46 @@ section {
     display: flex;
 }
 
+/************************************/
 
+.floatingphone {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.moregrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.moregrid p{
+    padding-left: 10%;
+    width: 100%;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 2.1;
+    padding-top: 25%;
+}
+
+.moregrid .shirley{
+    font-size: 2em;
+    font-weight: 600;
+
+}
+
+.moregrid p :hover{
+    text-decoration:dashed;
+}
+
+.moregrid img {
+    width:54%;
+    display: block;
+    margin-left: auto;
+    margin-right: 30%;
+}
 @media screen and (prefers-reduced-motion: reduce){
     .wave {
         animation: none;
